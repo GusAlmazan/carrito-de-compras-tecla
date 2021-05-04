@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lumen/bootstrap.css">
+    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+    <link rel="stylesheet" href="./assets/dist/css/styles.css">
+    <title>Tecla Tienda Online</title>
+    <link rel="stylesheet" href="./assets/dist/css/loader.css">
+    
+  </head>
+<body>
+   
+<header>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" class="mx-2" width="24" height="24" viewBox="0 0 24 24"><path fill="black" d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/></svg>
+        <strong>Tecla Store</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="checkout.html">Carrito</a><!--Checkout-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Categorías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Iniciar sesión</a><!--Despues de iniciar, ya puedes ver compras-->
+          </li>
+        </ul>
+        <form class="d-flex ml-auto" id="buscarForm">
+          <input class="form-control me-2" type="search" placeholder="¿Qué quieres comprar hoy?" id="buscar" required>
+          <button class="btn btn-warning mx-2" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="text-center container">
+     <br>
+    </br>
+    <div class="row">
+      <div class="mx-auto">
+       <!--  <div class="jumbotron"> -->
+          <h2>¡Categorias sobre videojuegos!</h2>
+         <!--  <div class="row align-items-start"> -->
+        <!--   <label for="categorias">Select a JS Framework</label> -->
+          <select id="categorias">
+          </select>
+          <button id="btn">Buscar</button>
+          
+<!--           <p class="lead">Categorías sobre videojuegos </p>
+ --><!--           <div id="tendencias" class="my-4"></div> -->
+       <!--  </div> -->
+       
+      </div>
+    </div>
+  </section>
+  
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="loader d-none mx-auto" id="loader"></div>
+      <div class="row" id="productos">       
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#tendencias">Volver a arriba</a>
+    </p>    
+  </div>
+</footer>
+
+<script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+<script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://bootswatch.com/_assets/js/custom.js"></script>
+
+<!--Scripts Carrito-->
+<script src="./assets/dist/js/ui.js"></script>
+
+      
+</body>
+</html>
